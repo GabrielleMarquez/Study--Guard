@@ -1,8 +1,9 @@
-package com.example.StudyGuard.quarter2;
+
+package com.example.studyguard.Quarter2;
 
 import org.junit.Test;
 
-public class MiniPeta1_Sample {
+public class Lumbera_MiniPeta1 {
     @Test
     public void printMyProfile() {
 
