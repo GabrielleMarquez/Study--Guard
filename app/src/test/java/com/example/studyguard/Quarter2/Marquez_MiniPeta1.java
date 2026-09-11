@@ -1,5 +1,5 @@
 
-package com.example.sampleapplicationfordemo.quarter2;
+package com.example.studyguard.Quarter2;
 
 import org.junit.Test;
 
