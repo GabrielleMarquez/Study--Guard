@@ -1,22 +1,32 @@
 package com.example.studyguard.Minipeta3;
 
+import java.util.Scanner;
 
 public class Login {
+    public static void main(String[] args) {
 
-        public static void main(String[] args) {
+        //username and password
+        String correctUsername = "123";
+        String correctPassword = "password123";
 
-            String username = "student";
-            String password = "12345";
+        Scanner scanner = new Scanner(System.in);
 
-            System.out.println("===== STUDY GUARD LOGIN =====");
-            System.out.println("Username: " + username);
-            System.out.println("Password: " + password);
+        //User input
+        System.out.print("Enter student number: ");
+        String username = scanner.nextLine();
 
-            if (username.equals("student") && password.equals("12345")) {
-                System.out.println("Login Successful!");
-            } else {
-                System.out.println("Invalid Username or Password!");
-            }
+        System.out.print("Enter your password: ");
+        String password = scanner.nextLine();
+
+        //Check studetnt credentials if correct
+        if (username.equals(correctUsername) && password.equals(correctPassword)) {
+            System.out.print("Logged In Successfully");
+
+        } else {
+            System.out.print("Invalid Username or Password");
+
         }
+
+        scanner.close();
     }
 }
