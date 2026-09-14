@@ -8,7 +8,7 @@ public class Marquez_MiniPeta1 {
     public void printMyProfile() {
         // --- 1. THE INPUT (Storing your personal details in variables) ---
         String myName = "Gab";
-        String petName = "Bucky";
+        String petName = "Snowy";
         String favFood = "Chicken";
         int myAge = 17;
 
