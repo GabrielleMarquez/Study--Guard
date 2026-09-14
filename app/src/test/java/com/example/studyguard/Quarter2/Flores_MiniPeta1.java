@@ -1,16 +1,15 @@
-
-package com.example.studyguard.Minipeta3;
+package com.example.studyguard.Quarter2;
 
 import org.junit.Test;
 
-public class Marquez_MiniPeta1 {
+public class Flores_MiniPeta1 {
     @Test
     public void printMyProfile() {
         // --- 1. THE INPUT (Storing your personal details in variables) ---
-        String myName = "Gab";
-        String petName = "Bucky";
-        String favFood = "Chicken";
-        int myAge = 17;
+        String myName = "Prinz";
+        String petName = "Mot chi";
+        String favFood = "Pizza";
+        int myAge = 15;
 
         // --- 2. THE OUTPUT (Printing to the console)
         System.out.println("--- MY DIGITAL PROFILE ---");
