@@ -1,4 +1,4 @@
-package com.example.studyguard.Minipeta3;
+package com.example.studyguard.Quarter2;
 
 import org.junit.Test;
 
@@ -9,7 +9,7 @@ public class Flores_MiniPeta1 {
         String myName = "Prinz";
         String petName = "Mot chi";
         String favFood = "Pizza";
-        int myAge = 15;
+        int myAge=16;
 
         // --- 2. THE OUTPUT (Printing to the console)
         System.out.println("--- MY DIGITAL PROFILE ---");
