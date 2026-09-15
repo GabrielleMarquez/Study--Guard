@@ -1,0 +1,19 @@
+Index: app/src/test/java/com/example/studyguard/Minipeta3/AttendanceStatus.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.example.studyguard.Minipeta3;\r\n\r\nimport java.util.Scanner;\r\n\r\npublic class Main {\r\n\r\n    private String studentAttendanceStatus;\r\n\r\n    public Main(String studentAttendanceStatus) {\r\n        this.studentAttendanceStatus = studentAttendanceStatus;\r\n    }\r\n\r\n    public String getStudentAttendanceStatus() {\r\n        return studentAttendanceStatus;\r\n    }\r\n\r\n    public void setStudentAttendanceStatus(String studentAttendanceStatus) {\r\n        this.studentAttendanceStatus = studentAttendanceStatus;\r\n    }\r\n\r\n    public void displayAttendanceStatus() {\r\n        System.out.println(\"Attendance Status: \" + studentAttendanceStatus);\r\n    }\r\n\r\n    public static void main(String[] args) {\r\n\r\n        Scanner scanner = new Scanner(System.in);\r\n        // User input\r\n        System.out.print(\"Enter attendance status (Present/Late/Absent): \");\r\n        String status = scanner.nextLine();\r\n\r\n        // Create object\r\n        Main studentRecord = new Main(status);\r\n\r\n        // Display attendance status\r\n        studentRecord.displayAttendanceStatus();\r\n\r\n        // Check attendance status\r\n        if (status.equalsIgnoreCase(\"Present\")) {\r\n            System.out.println(\"Student is present.\");\r\n        } else if (status.equalsIgnoreCase(\"Late\")) {\r\n            System.out.println(\"Student is late.\");\r\n        } else if (status.equalsIgnoreCase(\"Absent\")) {\r\n            System.out.println(\"Student is absent.\");\r\n        } else {\r\n            System.out.println(\"Invalid attendance status.\");\r\n\r\n            scanner.close();\r\n        }\r\n    }\r\n\r\n\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/test/java/com/example/studyguard/Minipeta3/AttendanceStatus.java b/app/src/test/java/com/example/studyguard/Minipeta3/AttendanceStatus.java
+--- a/app/src/test/java/com/example/studyguard/Minipeta3/AttendanceStatus.java	(revision f5b9773489e319a81742fbc0e1d45ca7c884e6fa)
++++ b/app/src/test/java/com/example/studyguard/Minipeta3/AttendanceStatus.java	(date 1789405910062)
+@@ -30,7 +30,7 @@
+         String status = scanner.nextLine();
+ 
+         // Create object
+-        Main studentRecord = new Main(status);
++        Settings studentRecord = new Settings(status);
+ 
+         // Display attendance status
+         studentRecord.displayAttendanceStatus();
