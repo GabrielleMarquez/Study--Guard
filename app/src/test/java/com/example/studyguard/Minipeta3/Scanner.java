@@ -1,4 +1,4 @@
-package com.example.studyguard.Minipeta;
+package com.example.studyguard.Minipeta3;
 
 import java.util.Scanner;
 
