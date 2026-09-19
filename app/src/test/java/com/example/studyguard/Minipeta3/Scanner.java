@@ -6,24 +6,35 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Scanner scanner = new Scanner(System.in);
+        Scanner input = new Scanner(System.in);
 
-        // QR code input
-        System.out.print("Enter QR code: ");
-        String qrCode = scanner.nextLine();
+        String correctQRCode = "ROOM101";
 
-        // Check QR code
-        if (qrCode.equals("STUDENT123")) {
+        System.out.println("===== QR CODE SCANNER =====");
+        System.out.println("Scan the QR code to enter the room.");
 
-            System.out.println("QR Code Scanned Successfully!");
-            System.out.println("Student Attendance: Present");
+        System.out.print("Enter scanned QR code: ");
+        String qrCode = input.nextLine();
 
-        } else {
+        if (qrCode.equalsIgnoreCase(correctQRCode)) {
 
-            System.out.println("Invalid QR Code");
+            System.out.println("\nQR code scanned successfully!");
+            System.out.println("Access granted!");
+            System.out.println("Welcome to Room 101.");
 
+            System.out.print("\nEnter student ID: ");
+            String studentID = input.nextLine();
+
+            System.out.println("\n===== ATTENDANCE =====");
+            System.out.println("Student ID: " + studentID);
+            System.out.println("Attendance recorded.");
+            System.out.println("Status: PRESENT");
+
+        } else {System.out.println("\nInvalid QR code!");
+            System.out.println("Access denied.");
+            System.out.println("Please scan the correct room QR code.");
         }
 
-        scanner.close();
+        input.close();
     }
 }
