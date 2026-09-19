@@ -13,7 +13,7 @@ public class Main {
         String qrCode = scanner.nextLine();
 
         // Check QR code
-        if (qrCode.equals("STUDENT123")) {
+        if (qrCode.equals("STUDENT122")) {
 
             System.out.println("QR Code Scanned Successfully!");
             System.out.println("Student Attendance: Present");
