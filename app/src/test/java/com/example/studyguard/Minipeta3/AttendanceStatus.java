@@ -2,11 +2,11 @@ package com.example.studyguard.Minipeta3;
 
 import java.util.Scanner;
 
-public class Main {
+public class AttendanceStatus {
 
     private String studentAttendanceStatus;
 
-    public Main(String studentAttendanceStatus) {
+    public AttendanceStatus(String studentAttendanceStatus) {
         this.studentAttendanceStatus = studentAttendanceStatus;
     }
 
@@ -30,7 +30,7 @@ public class Main {
         String status = scanner.nextLine();
 
         // Create object
-        Main studentRecord = new Main(status);
+        AttendanceStatus studentRecord = new AttendanceStatus(status);
 
         // Display attendance status
         studentRecord.displayAttendanceStatus();
