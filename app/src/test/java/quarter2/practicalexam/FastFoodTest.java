@@ -11,10 +11,11 @@ public class FastFoodTest {
     public void testFastFoodFlow() {
 
         String input =
-                "1\n2\n" +
-                        "2\n1\n" +
-                        "3\n1\n" +
-                        "7\n";
+                "1\n2\n" +   // Burger x2
+                        "2\n1\n" +   // Fries x1
+                        "3\n1\n" +   // Chicken x1
+                        "7\n" +      // Finish food ordering
+                        "1\n2\n";    // Extra Cheese x2
 
         ByteArrayInputStream inputStream =
                 new ByteArrayInputStream(input.getBytes());
@@ -35,9 +36,12 @@ public class FastFoodTest {
         int sodaQty = 0;
         int iceCreamQty = 0;
 
-        int choice = 0;
+        int extraCheeseQty = 0;
+        int extraSauceQty = 0;
 
-        while (choice != 7) {
+        int choice;
+
+        while (true) {
 
             System.out.println("=== FAST FOOD MENU ===");
             System.out.println("1. Burger - ₱50");
@@ -99,48 +103,109 @@ public class FastFoodTest {
                 total += 25 * quantity;
                 System.out.println("Soda added!");
 
-            } else if (choice == 6) {
-
+            } else {
                 iceCreamQty += quantity;
                 total += 30 * quantity;
                 System.out.println("Ice Cream added!");
             }
+
+            System.out.println();
+            System.out.println("=== ORDER SUMMARY ===");
+
+            if (burgerQty > 0) {
+                System.out.println("Burger x" + burgerQty +
+                        " = ₱" + (burgerQty * 50));
+            }
+
+            if (friesQty > 0) {
+                System.out.println("Fries x" + friesQty +
+                        " = ₱" + (friesQty * 35));
+            }
+
+            if (chickenQty > 0) {
+                System.out.println("Chicken x" + chickenQty +
+                        " = ₱" + (chickenQty * 80));
+            }
+
+            if (spaghettiQty > 0) {
+                System.out.println("Spaghetti x" + spaghettiQty +
+                        " = ₱" + (spaghettiQty * 60));
+            }
+
+            if (sodaQty > 0) {
+                System.out.println("Soda x" + sodaQty +
+                        " = ₱" + (sodaQty * 25));
+            }
+
+            if (iceCreamQty > 0) {
+                System.out.println("Ice Cream x" + iceCreamQty +
+                        " = ₱" + (iceCreamQty * 30));
+            }
+
+            System.out.println("----------------------");
+            System.out.println("TOTAL: ₱" + total);
         }
 
+// ADD-ONS
         System.out.println();
-        System.out.println("=== ORDER SUMMARY ===");
+        System.out.println("=== ADD-ONS ===");
+        System.out.println("1. Extra Cheese - ₱15");
+        System.out.println("2. Extra Sauce  - ₱10");
+        System.out.println("3. No Add-on");
 
-        if (burgerQty > 0) {
-            System.out.println("Burger x" + burgerQty +
-                    " = ₱" + (burgerQty * 50));
+        System.out.print("Choose add-on: ");
+        int addon = scanner.nextInt();
+
+        if (addon == 1) {
+
+            System.out.print("How many extra cheese? ");
+            int qty = scanner.nextInt();
+
+            if (qty > 0) {
+                extraCheeseQty = qty;
+                total += 15 * qty;
+                System.out.println("Extra cheese added!");
+            } else {
+                System.out.println("Invalid quantity.");
+            }
+
+        } else if (addon == 2) {
+
+            System.out.print("How many extra sauce? ");
+            int qty = scanner.nextInt();
+
+            if (qty > 0) {
+                extraSauceQty = qty;
+                total += 10 * qty;
+                System.out.println("Extra sauce added!");
+            } else {
+                System.out.println("Invalid quantity.");
+            }
+
+        } else if (addon == 3) {
+
+            System.out.println("No add-on selected.");
+
+        } else {
+
+            System.out.println("Invalid add-on choice.");
         }
 
-        if (friesQty > 0) {
-            System.out.println("Fries x" + friesQty +
-                    " = ₱" + (friesQty * 35));
+        if (extraCheeseQty > 0) {
+            System.out.println(
+                    "Extra Cheese x" + extraCheeseQty +
+                            " = ₱" + (extraCheeseQty * 15)
+            );
         }
 
-        if (chickenQty > 0) {
-            System.out.println("Chicken x" + chickenQty +
-                    " = ₱" + (chickenQty * 80));
-        }
-
-        if (spaghettiQty > 0) {
-            System.out.println("Spaghetti x" + spaghettiQty +
-                    " = ₱" + (spaghettiQty * 60));
-        }
-
-        if (sodaQty > 0) {
-            System.out.println("Soda x" + sodaQty +
-                    " = ₱" + (sodaQty * 25));
-        }
-
-        if (iceCreamQty > 0) {
-            System.out.println("Ice Cream x" + iceCreamQty +
-                    " = ₱" + (iceCreamQty * 30));
+        if (extraSauceQty > 0) {
+            System.out.println(
+                    "Extra Sauce x" + extraSauceQty +
+                            " = ₱" + (extraSauceQty * 10)
+            );
         }
 
         System.out.println("----------------------");
-        System.out.println("TOTAL: ₱" + total);
+        System.out.println("FINAL TOTAL: ₱" + total);
     }
 }
