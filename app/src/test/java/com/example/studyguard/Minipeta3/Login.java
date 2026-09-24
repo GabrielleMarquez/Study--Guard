@@ -4,13 +4,11 @@ import java.util.Scanner;
 
 public class Login {
 
-    public static void main(String[] args) {
+    public void Login(Scanner scanner) {
 
         // Correct username and password
         String correctUsername = "123";
         String correctPassword = "password123";
-
-        Scanner scanner = new Scanner(System.in);
 
         // User input
         System.out.print("Enter student number: ");
@@ -28,9 +26,6 @@ public class Login {
         } else {
 
             System.out.println("Invalid Username or Password");
-
         }
-
-        scanner.close();
     }
 }

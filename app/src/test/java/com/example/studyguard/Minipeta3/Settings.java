@@ -4,12 +4,12 @@ import java.util.Scanner;
 
 public class Settings {
 
-    public static void main(String[] args) {
+    private boolean notifications = true;
+    private boolean running = true;
 
-        Scanner input = new Scanner(System.in);
+    public void settings(Scanner scanner) {
 
-        boolean notifications = true;
-        boolean running = true;
+        running = true;
 
         while (running) {
 
@@ -22,8 +22,8 @@ public class Settings {
             System.out.println("5. Exit");
             System.out.print("Choose: ");
 
-            int choice = input.nextInt();
-            input.nextLine();
+            int choice = scanner.nextInt();
+            scanner.nextLine();
 
             switch (choice) {
 
@@ -32,7 +32,7 @@ public class Settings {
                             "Are you sure you want to log out? (yes/no): "
                     );
 
-                    String answer = input.nextLine();
+                    String answer = scanner.nextLine();
 
                     if (answer.equalsIgnoreCase("yes")) {
                         System.out.println(
@@ -48,7 +48,7 @@ public class Settings {
 
                 case 2:
                     System.out.print("Enter new password: ");
-                    String password = input.nextLine();
+                    String password = scanner.nextLine();
 
                     System.out.println(
                             "Password changed successfully!"
@@ -71,8 +71,8 @@ public class Settings {
                     System.out.println("3. Spanish");
                     System.out.print("Select language: ");
 
-                    int language = input.nextInt();
-                    input.nextLine();
+                    int language = scanner.nextInt();
+                    scanner.nextLine();
 
                     if (language == 1) {
                         System.out.println(
@@ -105,7 +105,5 @@ public class Settings {
                     System.out.println("Invalid choice.");
             }
         }
-
-        input.close();
     }
 }

@@ -1,6 +1,7 @@
 package com.example.studyguard.Minipeta3;
 
 import java.time.LocalDateTime;
+import java.util.Scanner;
 
 public class Logout {
 
@@ -13,21 +14,30 @@ public class Logout {
         this.loggedIn = true;
     }
 
-    public void logout() {
-        loggedIn = false;
-        logoutTime = LocalDateTime.now();
+    public void logout(Scanner scanner) {
 
-        System.out.println(username + " has logged out.");
-        System.out.println("Logout time: " + logoutTime);
+        System.out.println("=== LOGOUT ===");
+
+        System.out.print("Enter your username: ");
+        String inputUsername = scanner.nextLine();
+
+        if (inputUsername.equals(username)) {
+
+            loggedIn = false;
+            logoutTime = LocalDateTime.now();
+
+            System.out.println("Logout Successful!");
+            System.out.println("Goodbye, " + username + "!");
+            System.out.println("Logout time: " + logoutTime);
+
+        } else {
+
+            System.out.println("Username does not match.");
+            System.out.println("Logout Failed.");
+        }
     }
 
     public boolean isLoggedIn() {
         return loggedIn;
-    }
-
-    public static void main(String[] args) {
-        Logout session = new Logout("student01");
-
-        session.logout();
     }
 }

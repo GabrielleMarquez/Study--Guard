@@ -22,10 +22,9 @@ public class AttendanceStatus {
         System.out.println("Attendance Status: " + studentAttendanceStatus);
     }
 
-    public static void main(String[] args) {
+    // Accept the Scanner from the caller
+    public void runAttendanceStatus(Scanner scanner) {
 
-        Scanner scanner = new Scanner(System.in);
-        // User input
         System.out.print("Enter attendance status (Present/Late/Absent): ");
         String status = scanner.nextLine();
 
@@ -44,10 +43,6 @@ public class AttendanceStatus {
             System.out.println("Student is absent.");
         } else {
             System.out.println("Invalid attendance status.");
-
-            scanner.close();
         }
     }
-
-
 }
