@@ -8,14 +8,15 @@ import java.util.Scanner;
 public class FastFoodTest {
 
     @Test
-    public void testFastFoodFlow() {
 
+    public void testFastFoodFlow() {
         String input =
                 "1\n2\n" +   // Burger x2
                         "2\n1\n" +   // Fries x1
                         "3\n1\n" +   // Chicken x1
                         "7\n" +      // Finish food ordering
-                        "1\n2\n";    // Extra Cheese x2
+                        "1\n2\n" +   // Extra Cheese x2
+                        "1\n";       // Student Discount
 
         ByteArrayInputStream inputStream =
                 new ByteArrayInputStream(input.getBytes());
@@ -207,5 +208,97 @@ public class FastFoodTest {
 
         System.out.println("----------------------");
         System.out.println("FINAL TOTAL: ₱" + total);
+
+        // DISCOUNT
+        double discountRate;
+        double discount;
+
+        System.out.println("\n=================================");
+        System.out.println("            DISCOUNT");
+        System.out.println("=================================");
+        System.out.println("1. Student Discount - 10%");
+        System.out.println("2. Senior Discount  - 20%");
+        System.out.println("3. No Discount");
+
+        System.out.print("Choose discount: ");
+        int discountChoice = scanner.nextInt();
+
+        if (discountChoice == 1) {
+
+            discountRate = 0.10;
+            System.out.println("Student discount applied.");
+
+        } else if (discountChoice == 2) {
+
+            discountRate = 0.20;
+            System.out.println("Senior discount applied.");
+
+        } else if (discountChoice == 3) {
+
+            discountRate = 0.00;
+            System.out.println("No discount applied.");
+
+        } else {
+
+            System.out.println("Invalid discount choice. No discount applied.");
+            discountRate = 0.00;
+        }
+
+// MATH
+        discount = total * discountRate;
+
+        double finalTotal = total - discount;
+
+
+// RECEIPT
+        System.out.println("\n=================================");
+        System.out.println("             RECEIPT");
+        System.out.println("=================================");
+
+        if (burgerQty > 0) {
+            System.out.println("Burger        x" + burgerQty +
+                    " = ₱" + (burgerQty * 50));
+        }
+
+        if (friesQty > 0) {
+            System.out.println("Fries         x" + friesQty +
+                    " = ₱" + (friesQty * 35));
+        }
+
+        if (chickenQty > 0) {
+            System.out.println("Chicken       x" + chickenQty +
+                    " = ₱" + (chickenQty * 80));
+        }
+
+        if (spaghettiQty > 0) {
+            System.out.println("Spaghetti     x" + spaghettiQty +
+                    " = ₱" + (spaghettiQty * 60));
+        }
+
+        if (sodaQty > 0) {
+            System.out.println("Soda          x" + sodaQty +
+                    " = ₱" + (sodaQty * 25));
+        }
+
+        if (iceCreamQty > 0) {
+            System.out.println("Ice Cream     x" + iceCreamQty +
+                    " = ₱" + (iceCreamQty * 30));
+        }
+
+        if (extraCheeseQty > 0) {
+            System.out.println("Extra Cheese  x" + extraCheeseQty +
+                    " = ₱" + (extraCheeseQty * 15));
+        }
+
+        if (extraSauceQty > 0) {
+            System.out.println("Extra Sauce   x" + extraSauceQty +
+                    " = ₱" + (extraSauceQty * 10));
+        }
+
+        System.out.println("---------------------------------");
+        System.out.println("Subtotal:  ₱" + total);
+        System.out.println("Discount:  ₱" + discount);
+        System.out.println("TOTAL:     ₱" + finalTotal);
+        System.out.println("=================================");
     }
 }
