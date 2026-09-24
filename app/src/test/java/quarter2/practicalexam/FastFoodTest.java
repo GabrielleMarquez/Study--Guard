@@ -16,7 +16,8 @@ public class FastFoodTest {
                         "3\n1\n" +   // Chicken x1
                         "7\n" +      // Finish food ordering
                         "1\n2\n" +   // Extra Cheese x2
-                        "1\n";       // Student Discount
+                        "1\n" +      // Student Discount
+                        "300\n";     // Payment
 
         ByteArrayInputStream inputStream =
                 new ByteArrayInputStream(input.getBytes());
@@ -300,5 +301,27 @@ public class FastFoodTest {
         System.out.println("Discount:  ₱" + discount);
         System.out.println("TOTAL:     ₱" + finalTotal);
         System.out.println("=================================");
-    }
+
+    // PAYMENT
+    double payment;
+
+        do {
+        System.out.print("Enter payment: ₱");
+        payment = scanner.nextDouble();
+
+        if (payment < finalTotal) {
+            System.out.println("Insufficient payment!");
+        }
+
+    } while (payment < finalTotal);
+
+    double change = payment - finalTotal;
+
+        System.out.println("---------------------------------");
+        System.out.println("Payment:   ₱" + payment);
+        System.out.println("Change:    ₱" + change);
+        System.out.println("=================================");
+        System.out.println("     THANK YOU FOR ORDERING!");
+        System.out.println("=================================");
+}
 }
