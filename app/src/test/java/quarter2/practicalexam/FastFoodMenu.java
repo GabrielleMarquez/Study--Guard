@@ -83,5 +83,103 @@ public class FastFoodMenu {
                 System.out.println("Invalid choice!");
             }
         }
+
+// =========================
+// CALCULATIONS
+// =========================
+
+        int totalItems =
+                burgerComboQty +
+                        burgerSoloQty +
+                        friesQty;
+
+        double burgerComboTotal = burgerComboQty * 85;
+        double burgerSoloTotal = burgerSoloQty * 50;
+        double friesTotal = friesQty * 35;
+
+        double averagePrice = 0;
+
+        if (totalItems > 0) {
+            averagePrice = total / totalItems;
+        }
+
+        // =========================
+        // ORDER SUMMARY
+        // =========================
+
+        System.out.println("\n=================================");
+        System.out.println("          ORDER SUMMARY");
+        System.out.println("=================================");
+
+        if (burgerComboQty > 0) {
+            System.out.println(
+                    "Burger Combo x" + burgerComboQty +
+                            " = ₱" + burgerComboTotal
+            );
+        }
+
+        if (burgerSoloQty > 0) {
+            System.out.println(
+                    "Burger Solo  x" + burgerSoloQty +
+                            " = ₱" + burgerSoloTotal
+            );
+        }
+
+        if (friesQty > 0) {
+            System.out.println(
+                    "Fries        x" + friesQty +
+                            " = ₱" + friesTotal
+            );
+        }
+
+        System.out.println("---------------------------------");
+
+        System.out.println("Total Items: " + totalItems);
+        System.out.println("Subtotal: ₱" + total);
+
+// =========================
+// MOST ORDERED ITEM
+// =========================
+
+        System.out.println("---------------------------------");
+        System.out.println("ORDER INFORMATION");
+
+        if (totalItems == 0) {
+
+            System.out.println("No items ordered.");
+
+        } else {
+
+            if (burgerComboQty >= burgerSoloQty &&
+                    burgerComboQty >= friesQty) {
+
+                System.out.println("Most ordered: Burger Combo");
+
+            } else if (burgerSoloQty >= burgerComboQty &&
+                    burgerSoloQty >= friesQty) {
+
+                System.out.println("Most ordered: Burger Solo");
+
+            } else {
+
+                System.out.println("Most ordered: Fries");
+            }
+
+            System.out.println(
+                    "Average price per item: ₱" + averagePrice
+            );
+        }
+
+        // =========================
+        // ORDER STATUS
+        // =========================
+
+        System.out.println("---------------------------------");
+
+        if (total > 0) {
+            System.out.println("Order Status: READY");
+        } else {
+            System.out.println("Order Status: EMPTY");
+        }
     }
 }
