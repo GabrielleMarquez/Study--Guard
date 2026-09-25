@@ -65,7 +65,7 @@ public class FastFoodMenu {
                 System.out.println("Fries added!");
 
             }
-// =========================
+            // =========================
             // EXIT
             // =========================
             else if (choice == 3) {
@@ -84,14 +84,14 @@ public class FastFoodMenu {
             }
         }
 
-// =========================
-// CALCULATIONS
-// =========================
+            // =========================
+            // CALCULATIONS
+            // =========================
 
         int totalItems =
                 burgerComboQty +
-                        burgerSoloQty +
-                        friesQty;
+                burgerSoloQty +
+                friesQty;
 
         double burgerComboTotal = burgerComboQty * 85;
         double burgerSoloTotal = burgerSoloQty * 50;
@@ -103,9 +103,9 @@ public class FastFoodMenu {
             averagePrice = total / totalItems;
         }
 
-        // =========================
-        // ORDER SUMMARY
-        // =========================
+           // =========================
+           // ORDER SUMMARY
+           // =========================
 
         System.out.println("\n=================================");
         System.out.println("          ORDER SUMMARY");
@@ -135,11 +135,11 @@ public class FastFoodMenu {
         System.out.println("---------------------------------");
 
         System.out.println("Total Items: " + totalItems);
-        System.out.println("Subtotal: ₱" + total);
+        System.out.println("Subtotal: " + "₱" + total);
 
-// =========================
-// MOST ORDERED ITEM
-// =========================
+          // =========================
+          // MOST ORDERED ITEM
+          // =========================
 
         System.out.println("---------------------------------");
         System.out.println("ORDER INFORMATION");
@@ -170,9 +170,9 @@ public class FastFoodMenu {
             );
         }
 
-        // =========================
-        // ORDER STATUS
-        // =========================
+          // =========================
+          // ORDER STATUS
+          // =========================
 
         System.out.println("---------------------------------");
 
@@ -181,5 +181,41 @@ public class FastFoodMenu {
         } else {
             System.out.println("Order Status: EMPTY");
         }
+
+          // =========================
+          // FINAL RECEIPT
+          // =========================
+
+        System.out.println("\n=================================");
+        System.out.println("             RECEIPT");
+        System.out.println("=================================");
+
+        if (burgerComboQty > 0) {
+        System.out.println(
+                    "Burger Combo x" + burgerComboQty +
+                            " = ₱" + burgerComboTotal
+);
+        }
+
+                if (burgerSoloQty > 0) {
+        System.out.println(
+              "Burger Solo  x" + burgerSoloQty +
+                      " = ₱" + burgerSoloTotal
+);
+        }
+
+                if (friesQty > 0) {
+                    System.out.println(
+                            "Fries        x" + friesQty +
+                                    " = ₱" + friesTotal
+                    );
+                }
+
+        System.out.println("---------------------------------");
+        System.out.println("Total Items: " + totalItems);
+        System.out.println("TOTAL: ₱" + total);
+        System.out.println("=================================");
+        System.out.println("     THANK YOU FOR ORDERING!");
+        System.out.println("=================================");
     }
 }
