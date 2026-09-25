@@ -65,6 +65,23 @@ public class FastFoodMenu {
                 System.out.println("Fries added!");
 
             }
+// =========================
+            // EXIT
+            // =========================
+            else if (choice == 3) {
+
+                System.out.println("\nProcessing your order...");
+                break;
+
+            }
+
+            // =========================
+            // INVALID
+            // =========================
+            else {
+
+                System.out.println("Invalid choice!");
+            }
         }
     }
 }
