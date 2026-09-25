@@ -3,7 +3,7 @@ package com.example.studyguard.Minipeta3;
 import java.time.LocalDateTime;
 import java.util.Scanner;
 
-public class Logout {
+public class    Logout {
 
     private String username;
     private boolean loggedIn;
