@@ -46,6 +46,7 @@ public class ArcadeCounterMenu {
                     running = false;
                     break;
 
+
             }
         }
     }
