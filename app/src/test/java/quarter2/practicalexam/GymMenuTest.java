@@ -4,7 +4,7 @@ import org.junit.Test;
 import java.io.ByteArrayInputStream;
 import java.util.Scanner;
 
-public class GymAccess {
+public class GymMenuTest {
 
     public void start(Scanner scanner) {
 
@@ -63,8 +63,17 @@ public class GymAccess {
         //Step 4: Exit system
         automatedInput.append("3\n"); //Choose Exit
 
+        System.out.println("--- TEST DATA GENERATION COMPLETED ---\n");
 
+        ByteArrayInputStream inputStream = new ByteArrayInputStream(automatedInput.toString().getBytes());
 
+        Scanner scanner = new Scanner(inputStream);
+
+        GymMenuTest gymSystem = new GymMenuTest ();
+
+        gymSystem.start(scanner);
+
+        scanner.close();
 
     }
 }

@@ -1,4 +1,4 @@
-package com.example.studyguard.Minipeta3;
+package com.example.studyguard.Quarter2;
 
 import org.junit.Test;
 

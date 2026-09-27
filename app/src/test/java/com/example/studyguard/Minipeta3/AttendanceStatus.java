@@ -2,11 +2,11 @@ package com.example.studyguard.Minipeta3;
 
 import java.util.Scanner;
 
-public class Main {
+public class AttendanceStatus {
 
     private String studentAttendanceStatus;
 
-    public Main(String studentAttendanceStatus) {
+    public AttendanceStatus(String studentAttendanceStatus) {
         this.studentAttendanceStatus = studentAttendanceStatus;
     }
 
@@ -22,15 +22,14 @@ public class Main {
         System.out.println("Attendance Status: " + studentAttendanceStatus);
     }
 
-    public static void main(String[] args) {
+    // Accept the Scanner from the caller
+    public void runAttendanceStatus(Scanner scanner) {
 
-        Scanner scanner = new Scanner(System.in);
-        // User input
         System.out.print("Enter attendance status (Present/Late/Absent): ");
         String status = scanner.nextLine();
 
         // Create object
-        Main studentRecord = new Main(status);
+        AttendanceStatus studentRecord = new AttendanceStatus(status);
 
         // Display attendance status
         studentRecord.displayAttendanceStatus();
@@ -44,10 +43,6 @@ public class Main {
             System.out.println("Student is absent.");
         } else {
             System.out.println("Invalid attendance status.");
-
-            scanner.close();
         }
     }
-
-
 }

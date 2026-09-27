@@ -1,0 +1,33 @@
+Index: app/src/test/java/quarter2/practicalexam/CinemaTicketingTest.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/test/java/quarter2/practicalexam/CinemaTicketingTest.java b/app/src/test/java/quarter2/practicalexam/CinemaTicketingTest.java
+new file mode 100644
+--- /dev/null	(date 1790059984469)
++++ b/app/src/test/java/quarter2/practicalexam/CinemaTicketingTest.java	(date 1790059984469)
+@@ -0,0 +1,4 @@
++package quarter2.practicalexam;
++
++public class CinemaTicketingTest {
++}
+Index: app/src/test/java/com/example/studyguard/Minipeta3/Logout.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.example.studyguard.Minipeta3;\r\n\r\nimport java.time.LocalDateTime;\r\n\r\npublic class Logout {\r\n\r\n    private String username;\r\n    private boolean loggedIn;\r\n    private LocalDateTime logoutTime;\r\n\r\n    public Logout(String username) {\r\n        this.username = username;\r\n        this.loggedIn = true;\r\n    }\r\n\r\n    public void logout() {\r\n        loggedIn = false;\r\n        logoutTime = LocalDateTime.now();\r\n\r\n        System.out.println(username + \" has logged out.\");\r\n        System.out.println(\"Logout time: \" + logoutTime);\r\n    }\r\n\r\n    public boolean isLoggedIn() {\r\n        return loggedIn;\r\n    }\r\n\r\n    public static void main(String[] args) {\r\n        Logout session = new Logout(\"student01\");\r\n\r\n        session.logout();\r\n    }\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/test/java/com/example/studyguard/Minipeta3/Logout.java b/app/src/test/java/com/example/studyguard/Minipeta3/Logout.java
+--- a/app/src/test/java/com/example/studyguard/Minipeta3/Logout.java	(revision ca26f3cc46feb5c40496fd599e4e4b3607dbfd6a)
++++ b/app/src/test/java/com/example/studyguard/Minipeta3/Logout.java	(date 1790294965144)
+@@ -2,7 +2,7 @@
+ 
+ import java.time.LocalDateTime;
+ 
+-public class Logout {
++public class    Logout {
+ 
+     private String username;
+     private boolean loggedIn;
