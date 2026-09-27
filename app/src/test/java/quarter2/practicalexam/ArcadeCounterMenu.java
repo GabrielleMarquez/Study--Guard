@@ -16,5 +16,9 @@ public class ArcadeCounterMenu {
             System.out.println("3. Exit System");
             System.out.print("Enter your choice: ");
         }
+        int choice = scanner.nextInt();
+
+        switch (choice) {
+        }
     }
 }
