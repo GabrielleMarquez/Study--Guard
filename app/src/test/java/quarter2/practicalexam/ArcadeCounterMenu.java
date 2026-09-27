@@ -46,7 +46,9 @@ public class ArcadeCounterMenu {
                     running = false;
                     break;
 
-
+                default:
+                    System.out.println("\nInvalid choice!");
+                    break;
 
             }
         }
