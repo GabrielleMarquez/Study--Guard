@@ -7,4 +7,3 @@ public class ArcadeCounterMenu {
     public void start(Scanner scanner) {
 
     }
-}
