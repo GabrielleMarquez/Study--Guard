@@ -42,6 +42,13 @@ public class GymMenu {
 
                     break;
 
+                case 3:
+                    System.out.println("Thank you for using the Gym Access System!");
+                    running = false;
+                    break;
+
+                default:
+                    System.out.println("Invalid choice. Please try again.");
 
             }
         }
