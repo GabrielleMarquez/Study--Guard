@@ -30,7 +30,8 @@ public class CinemaTicketingTest {
 
         ByteArrayInputStream inputStream = new ByteArrayInputStream(automatedInput.toString().getBytes());
         Scanner scanner = new Scanner(inputStream);
-        CinemaMenu cinemaSystem = new CinemaMenu();
+        CinimaTicketingMenu cinemaSystem = new
+                CinimaTicketingMenu();
         cinemaSystem.start(scanner);
     }
 }
