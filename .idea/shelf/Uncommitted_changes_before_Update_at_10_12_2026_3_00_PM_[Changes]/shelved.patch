@@ -1,0 +1,480 @@
+Index: app/src/main/java/com/example/studyguard/LogIn.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/java/com/example/studyguard/LogIn.java b/app/src/main/java/com/example/studyguard/LogIn.java
+new file mode 100644
+--- /dev/null	(date 1791787291414)
++++ b/app/src/main/java/com/example/studyguard/LogIn.java	(date 1791787291414)
+@@ -0,0 +1,6 @@
++package com.example.studyguard;
++
++import android.app.Activity;
++
++public class LogIn extends Activity {
++}
+Index: app/src/main/java/com/example/studyguard/LogIn.kt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/java/com/example/studyguard/LogIn.kt b/app/src/main/java/com/example/studyguard/LogIn.kt
+new file mode 100644
+--- /dev/null	(date 1791787277067)
++++ b/app/src/main/java/com/example/studyguard/LogIn.kt	(date 1791787277067)
+@@ -0,0 +1,7 @@
++package com.example.studyguard
++
++import android.app.Activity
++
++class LogIn : Activity() {
++
++}
+Index: app/src/main/res/drawable/ic_launcher_background.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<vector xmlns:android=\"http://schemas.android.com/apk/res/android\"\r\n    android:width=\"108dp\"\r\n    android:height=\"108dp\"\r\n    android:viewportWidth=\"108\"\r\n    android:viewportHeight=\"108\">\r\n  <group android:scaleX=\"0.99\"\r\n      android:scaleY=\"0.99\"\r\n      android:translateX=\"0.54\"\r\n      android:translateY=\"0.54\">\r\n      <path android:fillColor=\"#3DDC84\"\r\n            android:pathData=\"M0,0h108v108h-108z\"/>\r\n      <path android:fillColor=\"#00000000\" android:pathData=\"M9,0L9,108\"\r\n            android:strokeColor=\"#33FFFFFF\" android:strokeWidth=\"0.8\"/>\r\n      <path android:fillColor=\"#00000000\" android:pathData=\"M19,0L19,108\"\r\n            android:strokeColor=\"#33FFFFFF\" android:strokeWidth=\"0.8\"/>\r\n      <path android:fillColor=\"#00000000\" android:pathData=\"M29,0L29,108\"\r\n            android:strokeColor=\"#33FFFFFF\" android:strokeWidth=\"0.8\"/>\r\n      <path android:fillColor=\"#00000000\" android:pathData=\"M39,0L39,108\"\r\n            android:strokeColor=\"#33FFFFFF\" android:strokeWidth=\"0.8\"/>\r\n      <path android:fillColor=\"#00000000\" android:pathData=\"M49,0L49,108\"\r\n            android:strokeColor=\"#33FFFFFF\" android:strokeWidth=\"0.8\"/>\r\n      <path android:fillColor=\"#00000000\" android:pathData=\"M59,0L59,108\"\r\n            android:strokeColor=\"#33FFFFFF\" android:strokeWidth=\"0.8\"/>\r\n      <path android:fillColor=\"#00000000\" android:pathData=\"M69,0L69,108\"\r\n            android:strokeColor=\"#33FFFFFF\" android:strokeWidth=\"0.8\"/>\r\n      <path android:fillColor=\"#00000000\" android:pathData=\"M79,0L79,108\"\r\n            android:strokeColor=\"#33FFFFFF\" android:strokeWidth=\"0.8\"/>\r\n      <path android:fillColor=\"#00000000\" android:pathData=\"M89,0L89,108\"\r\n            android:strokeColor=\"#33FFFFFF\" android:strokeWidth=\"0.8\"/>\r\n      <path android:fillColor=\"#00000000\" android:pathData=\"M99,0L99,108\"\r\n            android:strokeColor=\"#33FFFFFF\" android:strokeWidth=\"0.8\"/>\r\n      <path android:fillColor=\"#00000000\" android:pathData=\"M0,9L108,9\"\r\n            android:strokeColor=\"#33FFFFFF\" android:strokeWidth=\"0.8\"/>\r\n      <path android:fillColor=\"#00000000\" android:pathData=\"M0,19L108,19\"\r\n            android:strokeColor=\"#33FFFFFF\" android:strokeWidth=\"0.8\"/>\r\n      <path android:fillColor=\"#00000000\" android:pathData=\"M0,29L108,29\"\r\n            android:strokeColor=\"#33FFFFFF\" android:strokeWidth=\"0.8\"/>\r\n      <path android:fillColor=\"#00000000\" android:pathData=\"M0,39L108,39\"\r\n            android:strokeColor=\"#33FFFFFF\" android:strokeWidth=\"0.8\"/>\r\n      <path android:fillColor=\"#00000000\" android:pathData=\"M0,49L108,49\"\r\n            android:strokeColor=\"#33FFFFFF\" android:strokeWidth=\"0.8\"/>\r\n      <path android:fillColor=\"#00000000\" android:pathData=\"M0,59L108,59\"\r\n            android:strokeColor=\"#33FFFFFF\" android:strokeWidth=\"0.8\"/>\r\n      <path android:fillColor=\"#00000000\" android:pathData=\"M0,69L108,69\"\r\n            android:strokeColor=\"#33FFFFFF\" android:strokeWidth=\"0.8\"/>\r\n      <path android:fillColor=\"#00000000\" android:pathData=\"M0,79L108,79\"\r\n            android:strokeColor=\"#33FFFFFF\" android:strokeWidth=\"0.8\"/>\r\n      <path android:fillColor=\"#00000000\" android:pathData=\"M0,89L108,89\"\r\n            android:strokeColor=\"#33FFFFFF\" android:strokeWidth=\"0.8\"/>\r\n      <path android:fillColor=\"#00000000\" android:pathData=\"M0,99L108,99\"\r\n            android:strokeColor=\"#33FFFFFF\" android:strokeWidth=\"0.8\"/>\r\n      <path android:fillColor=\"#00000000\" android:pathData=\"M19,29L89,29\"\r\n            android:strokeColor=\"#33FFFFFF\" android:strokeWidth=\"0.8\"/>\r\n      <path android:fillColor=\"#00000000\" android:pathData=\"M19,39L89,39\"\r\n            android:strokeColor=\"#33FFFFFF\" android:strokeWidth=\"0.8\"/>\r\n      <path android:fillColor=\"#00000000\" android:pathData=\"M19,49L89,49\"\r\n            android:strokeColor=\"#33FFFFFF\" android:strokeWidth=\"0.8\"/>\r\n      <path android:fillColor=\"#00000000\" android:pathData=\"M19,59L89,59\"\r\n            android:strokeColor=\"#33FFFFFF\" android:strokeWidth=\"0.8\"/>\r\n      <path android:fillColor=\"#00000000\" android:pathData=\"M19,69L89,69\"\r\n            android:strokeColor=\"#33FFFFFF\" android:strokeWidth=\"0.8\"/>\r\n      <path android:fillColor=\"#00000000\" android:pathData=\"M19,79L89,79\"\r\n            android:strokeColor=\"#33FFFFFF\" android:strokeWidth=\"0.8\"/>\r\n      <path android:fillColor=\"#00000000\" android:pathData=\"M29,19L29,89\"\r\n            android:strokeColor=\"#33FFFFFF\" android:strokeWidth=\"0.8\"/>\r\n      <path android:fillColor=\"#00000000\" android:pathData=\"M39,19L39,89\"\r\n            android:strokeColor=\"#33FFFFFF\" android:strokeWidth=\"0.8\"/>\r\n      <path android:fillColor=\"#00000000\" android:pathData=\"M49,19L49,89\"\r\n            android:strokeColor=\"#33FFFFFF\" android:strokeWidth=\"0.8\"/>\r\n      <path android:fillColor=\"#00000000\" android:pathData=\"M59,19L59,89\"\r\n            android:strokeColor=\"#33FFFFFF\" android:strokeWidth=\"0.8\"/>\r\n      <path android:fillColor=\"#00000000\" android:pathData=\"M69,19L69,89\"\r\n            android:strokeColor=\"#33FFFFFF\" android:strokeWidth=\"0.8\"/>\r\n      <path android:fillColor=\"#00000000\" android:pathData=\"M79,19L79,89\"\r\n            android:strokeColor=\"#33FFFFFF\" android:strokeWidth=\"0.8\"/>\r\n  </group>\r\n</vector>\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/drawable/ic_launcher_background.xml b/app/src/main/res/drawable/ic_launcher_background.xml
+--- a/app/src/main/res/drawable/ic_launcher_background.xml	(revision 47fd07f3a562679089dc3d48354c6c026df1eb85)
++++ b/app/src/main/res/drawable/ic_launcher_background.xml	(date 1791787749745)
+@@ -4,75 +4,167 @@
+     android:height="108dp"
+     android:viewportWidth="108"
+     android:viewportHeight="108">
+-  <group android:scaleX="0.99"
+-      android:scaleY="0.99"
+-      android:translateX="0.54"
+-      android:translateY="0.54">
+-      <path android:fillColor="#3DDC84"
+-            android:pathData="M0,0h108v108h-108z"/>
+-      <path android:fillColor="#00000000" android:pathData="M9,0L9,108"
+-            android:strokeColor="#33FFFFFF" android:strokeWidth="0.8"/>
+-      <path android:fillColor="#00000000" android:pathData="M19,0L19,108"
+-            android:strokeColor="#33FFFFFF" android:strokeWidth="0.8"/>
+-      <path android:fillColor="#00000000" android:pathData="M29,0L29,108"
+-            android:strokeColor="#33FFFFFF" android:strokeWidth="0.8"/>
+-      <path android:fillColor="#00000000" android:pathData="M39,0L39,108"
+-            android:strokeColor="#33FFFFFF" android:strokeWidth="0.8"/>
+-      <path android:fillColor="#00000000" android:pathData="M49,0L49,108"
+-            android:strokeColor="#33FFFFFF" android:strokeWidth="0.8"/>
+-      <path android:fillColor="#00000000" android:pathData="M59,0L59,108"
+-            android:strokeColor="#33FFFFFF" android:strokeWidth="0.8"/>
+-      <path android:fillColor="#00000000" android:pathData="M69,0L69,108"
+-            android:strokeColor="#33FFFFFF" android:strokeWidth="0.8"/>
+-      <path android:fillColor="#00000000" android:pathData="M79,0L79,108"
+-            android:strokeColor="#33FFFFFF" android:strokeWidth="0.8"/>
+-      <path android:fillColor="#00000000" android:pathData="M89,0L89,108"
+-            android:strokeColor="#33FFFFFF" android:strokeWidth="0.8"/>
+-      <path android:fillColor="#00000000" android:pathData="M99,0L99,108"
+-            android:strokeColor="#33FFFFFF" android:strokeWidth="0.8"/>
+-      <path android:fillColor="#00000000" android:pathData="M0,9L108,9"
+-            android:strokeColor="#33FFFFFF" android:strokeWidth="0.8"/>
+-      <path android:fillColor="#00000000" android:pathData="M0,19L108,19"
+-            android:strokeColor="#33FFFFFF" android:strokeWidth="0.8"/>
+-      <path android:fillColor="#00000000" android:pathData="M0,29L108,29"
+-            android:strokeColor="#33FFFFFF" android:strokeWidth="0.8"/>
+-      <path android:fillColor="#00000000" android:pathData="M0,39L108,39"
+-            android:strokeColor="#33FFFFFF" android:strokeWidth="0.8"/>
+-      <path android:fillColor="#00000000" android:pathData="M0,49L108,49"
+-            android:strokeColor="#33FFFFFF" android:strokeWidth="0.8"/>
+-      <path android:fillColor="#00000000" android:pathData="M0,59L108,59"
+-            android:strokeColor="#33FFFFFF" android:strokeWidth="0.8"/>
+-      <path android:fillColor="#00000000" android:pathData="M0,69L108,69"
+-            android:strokeColor="#33FFFFFF" android:strokeWidth="0.8"/>
+-      <path android:fillColor="#00000000" android:pathData="M0,79L108,79"
+-            android:strokeColor="#33FFFFFF" android:strokeWidth="0.8"/>
+-      <path android:fillColor="#00000000" android:pathData="M0,89L108,89"
+-            android:strokeColor="#33FFFFFF" android:strokeWidth="0.8"/>
+-      <path android:fillColor="#00000000" android:pathData="M0,99L108,99"
+-            android:strokeColor="#33FFFFFF" android:strokeWidth="0.8"/>
+-      <path android:fillColor="#00000000" android:pathData="M19,29L89,29"
+-            android:strokeColor="#33FFFFFF" android:strokeWidth="0.8"/>
+-      <path android:fillColor="#00000000" android:pathData="M19,39L89,39"
+-            android:strokeColor="#33FFFFFF" android:strokeWidth="0.8"/>
+-      <path android:fillColor="#00000000" android:pathData="M19,49L89,49"
+-            android:strokeColor="#33FFFFFF" android:strokeWidth="0.8"/>
+-      <path android:fillColor="#00000000" android:pathData="M19,59L89,59"
+-            android:strokeColor="#33FFFFFF" android:strokeWidth="0.8"/>
+-      <path android:fillColor="#00000000" android:pathData="M19,69L89,69"
+-            android:strokeColor="#33FFFFFF" android:strokeWidth="0.8"/>
+-      <path android:fillColor="#00000000" android:pathData="M19,79L89,79"
+-            android:strokeColor="#33FFFFFF" android:strokeWidth="0.8"/>
+-      <path android:fillColor="#00000000" android:pathData="M29,19L29,89"
+-            android:strokeColor="#33FFFFFF" android:strokeWidth="0.8"/>
+-      <path android:fillColor="#00000000" android:pathData="M39,19L39,89"
+-            android:strokeColor="#33FFFFFF" android:strokeWidth="0.8"/>
+-      <path android:fillColor="#00000000" android:pathData="M49,19L49,89"
+-            android:strokeColor="#33FFFFFF" android:strokeWidth="0.8"/>
+-      <path android:fillColor="#00000000" android:pathData="M59,19L59,89"
+-            android:strokeColor="#33FFFFFF" android:strokeWidth="0.8"/>
+-      <path android:fillColor="#00000000" android:pathData="M69,19L69,89"
+-            android:strokeColor="#33FFFFFF" android:strokeWidth="0.8"/>
+-      <path android:fillColor="#00000000" android:pathData="M79,19L79,89"
+-            android:strokeColor="#33FFFFFF" android:strokeWidth="0.8"/>
+-  </group>
++    <path
++        android:fillColor="#3DDC84"
++        android:pathData="M0,0h108v108h-108z" />
++    <path
++        android:fillColor="#00000000"
++        android:pathData="M9,0L9,108"
++        android:strokeWidth="0.8"
++        android:strokeColor="#33FFFFFF" />
++    <path
++        android:fillColor="#00000000"
++        android:pathData="M19,0L19,108"
++        android:strokeWidth="0.8"
++        android:strokeColor="#33FFFFFF" />
++    <path
++        android:fillColor="#00000000"
++        android:pathData="M29,0L29,108"
++        android:strokeWidth="0.8"
++        android:strokeColor="#33FFFFFF" />
++    <path
++        android:fillColor="#00000000"
++        android:pathData="M39,0L39,108"
++        android:strokeWidth="0.8"
++        android:strokeColor="#33FFFFFF" />
++    <path
++        android:fillColor="#00000000"
++        android:pathData="M49,0L49,108"
++        android:strokeWidth="0.8"
++        android:strokeColor="#33FFFFFF" />
++    <path
++        android:fillColor="#00000000"
++        android:pathData="M59,0L59,108"
++        android:strokeWidth="0.8"
++        android:strokeColor="#33FFFFFF" />
++    <path
++        android:fillColor="#00000000"
++        android:pathData="M69,0L69,108"
++        android:strokeWidth="0.8"
++        android:strokeColor="#33FFFFFF" />
++    <path
++        android:fillColor="#00000000"
++        android:pathData="M79,0L79,108"
++        android:strokeWidth="0.8"
++        android:strokeColor="#33FFFFFF" />
++    <path
++        android:fillColor="#00000000"
++        android:pathData="M89,0L89,108"
++        android:strokeWidth="0.8"
++        android:strokeColor="#33FFFFFF" />
++    <path
++        android:fillColor="#00000000"
++        android:pathData="M99,0L99,108"
++        android:strokeWidth="0.8"
++        android:strokeColor="#33FFFFFF" />
++    <path
++        android:fillColor="#00000000"
++        android:pathData="M0,9L108,9"
++        android:strokeWidth="0.8"
++        android:strokeColor="#33FFFFFF" />
++    <path
++        android:fillColor="#00000000"
++        android:pathData="M0,19L108,19"
++        android:strokeWidth="0.8"
++        android:strokeColor="#33FFFFFF" />
++    <path
++        android:fillColor="#00000000"
++        android:pathData="M0,29L108,29"
++        android:strokeWidth="0.8"
++        android:strokeColor="#33FFFFFF" />
++    <path
++        android:fillColor="#00000000"
++        android:pathData="M0,39L108,39"
++        android:strokeWidth="0.8"
++        android:strokeColor="#33FFFFFF" />
++    <path
++        android:fillColor="#00000000"
++        android:pathData="M0,49L108,49"
++        android:strokeWidth="0.8"
++        android:strokeColor="#33FFFFFF" />
++    <path
++        android:fillColor="#00000000"
++        android:pathData="M0,59L108,59"
++        android:strokeWidth="0.8"
++        android:strokeColor="#33FFFFFF" />
++    <path
++        android:fillColor="#00000000"
++        android:pathData="M0,69L108,69"
++        android:strokeWidth="0.8"
++        android:strokeColor="#33FFFFFF" />
++    <path
++        android:fillColor="#00000000"
++        android:pathData="M0,79L108,79"
++        android:strokeWidth="0.8"
++        android:strokeColor="#33FFFFFF" />
++    <path
++        android:fillColor="#00000000"
++        android:pathData="M0,89L108,89"
++        android:strokeWidth="0.8"
++        android:strokeColor="#33FFFFFF" />
++    <path
++        android:fillColor="#00000000"
++        android:pathData="M0,99L108,99"
++        android:strokeWidth="0.8"
++        android:strokeColor="#33FFFFFF" />
++    <path
++        android:fillColor="#00000000"
++        android:pathData="M19,29L89,29"
++        android:strokeWidth="0.8"
++        android:strokeColor="#33FFFFFF" />
++    <path
++        android:fillColor="#00000000"
++        android:pathData="M19,39L89,39"
++        android:strokeWidth="0.8"
++        android:strokeColor="#33FFFFFF" />
++    <path
++        android:fillColor="#00000000"
++        android:pathData="M19,49L89,49"
++        android:strokeWidth="0.8"
++        android:strokeColor="#33FFFFFF" />
++    <path
++        android:fillColor="#00000000"
++        android:pathData="M19,59L89,59"
++        android:strokeWidth="0.8"
++        android:strokeColor="#33FFFFFF" />
++    <path
++        android:fillColor="#00000000"
++        android:pathData="M19,69L89,69"
++        android:strokeWidth="0.8"
++        android:strokeColor="#33FFFFFF" />
++    <path
++        android:fillColor="#00000000"
++        android:pathData="M19,79L89,79"
++        android:strokeWidth="0.8"
++        android:strokeColor="#33FFFFFF" />
++    <path
++        android:fillColor="#00000000"
++        android:pathData="M29,19L29,89"
++        android:strokeWidth="0.8"
++        android:strokeColor="#33FFFFFF" />
++    <path
++        android:fillColor="#00000000"
++        android:pathData="M39,19L39,89"
++        android:strokeWidth="0.8"
++        android:strokeColor="#33FFFFFF" />
++    <path
++        android:fillColor="#00000000"
++        android:pathData="M49,19L49,89"
++        android:strokeWidth="0.8"
++        android:strokeColor="#33FFFFFF" />
++    <path
++        android:fillColor="#00000000"
++        android:pathData="M59,19L59,89"
++        android:strokeWidth="0.8"
++        android:strokeColor="#33FFFFFF" />
++    <path
++        android:fillColor="#00000000"
++        android:pathData="M69,19L69,89"
++        android:strokeWidth="0.8"
++        android:strokeColor="#33FFFFFF" />
++    <path
++        android:fillColor="#00000000"
++        android:pathData="M79,19L79,89"
++        android:strokeWidth="0.8"
++        android:strokeColor="#33FFFFFF" />
+ </vector>
+Index: app/src/main/AndroidManifest.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\"\r\n    xmlns:tools=\"http://schemas.android.com/tools\">\r\n\r\n    <application\r\n        android:allowBackup=\"true\"\r\n        android:dataExtractionRules=\"@xml/data_extraction_rules\"\r\n        android:fullBackupContent=\"@xml/backup_rules\"\r\n        android:icon=\"@mipmap/ic_launcher\"\r\n        android:label=\"@string/app_name\"\r\n        android:roundIcon=\"@mipmap/ic_launcher_round\"\r\n        android:supportsRtl=\"true\"\r\n        android:theme=\"@style/Theme.StudyGuard\">\r\n        <activity\r\n            android:name=\".LogIn\"\r\n            android:exported=\"false\"\r\n            android:windowSoftInputMode=\"adjustResize\" />\r\n        <activity\r\n            android:name=\".LogIn\"\r\n            android:exported=\"false\"\r\n            android:windowSoftInputMode=\"adjustResize\" />\r\n        <activity\r\n            android:name=\".Log_Out\"\r\n            android:exported=\"false\"\r\n            android:windowSoftInputMode=\"adjustResize\" />\r\n    </application>\r\n\r\n</manifest>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/AndroidManifest.xml b/app/src/main/AndroidManifest.xml
+--- a/app/src/main/AndroidManifest.xml	(revision 47fd07f3a562679089dc3d48354c6c026df1eb85)
++++ b/app/src/main/AndroidManifest.xml	(date 1791787406920)
+@@ -18,11 +18,8 @@
+         <activity
+             android:name=".LogIn"
+             android:exported="false"
+-            android:windowSoftInputMode="adjustResize" />
+-        <activity
+-            android:name=".Log_Out"
+-            android:exported="false"
+-            android:windowSoftInputMode="adjustResize" />
++            android:windowSoftInputMode="adjustResize"
++            tools:ignore="DuplicateActivity" />
+     </application>
+ 
+ </manifest>
+\ No newline at end of file
+Index: app/src/main/res/layout/activity_rfid_scanner.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/layout/activity_rfid_scanner.xml b/app/src/main/res/layout/activity_rfid_scanner.xml
+new file mode 100644
+--- /dev/null	(date 1791786491000)
++++ b/app/src/main/res/layout/activity_rfid_scanner.xml	(date 1791786491000)
+@@ -0,0 +1,44 @@
++<?xml version="1.0" encoding="utf-8"?>
++<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
++    xmlns:app="http://schemas.android.com/apk/res-auto"
++    xmlns:tools="http://schemas.android.com/tools"
++    android:id="@+id/main"
++    android:layout_width="match_parent"
++    android:layout_height="match_parent"
++    android:background="#96B2AD"
++    tools:context=".RFID_SCANNER">
++
++    <ImageView
++        android:id="@+id/imageView2"
++        android:layout_width="37dp"
++        android:layout_height="138dp"
++        android:layout_marginEnd="4dp"
++        android:src="@drawable/_664883"
++        app:layout_constraintEnd_toEndOf="parent"
++        tools:layout_editor_absoluteY="-52dp" />
++
++    <ImageView
++        android:id="@+id/imageView3"
++        android:layout_width="40dp"
++        android:layout_height="80dp"
++        android:src="@drawable/images__1__removebg_preview"
++        tools:layout_editor_absoluteX="320dp"
++        tools:layout_editor_absoluteY="-23dp" />
++
++    <TextClock
++        android:id="@+id/textClock"
++        android:layout_width="wrap_content"
++        android:layout_height="wrap_content"
++        android:layout_marginTop="4dp"
++        app:layout_constraintTop_toTopOf="parent"
++        tools:layout_editor_absoluteX="6dp" />
++
++    <ImageView
++        android:id="@+id/imageView4"
++        android:layout_width="338dp"
++        android:layout_height="385dp"
++        android:layout_marginEnd="36dp"
++        android:src="@drawable/images_removebg_preview__1_"
++        app:layout_constraintEnd_toEndOf="parent"
++        tools:layout_editor_absoluteY="133dp" />
++</androidx.constraintlayout.widget.ConstraintLayout>
+\ No newline at end of file
+Index: app/src/main/res/layout/activity_log_in.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<androidx.constraintlayout.widget.ConstraintLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\r\n    xmlns:app=\"http://schemas.android.com/apk/res-auto\"\r\n    xmlns:tools=\"http://schemas.android.com/tools\"\r\n    android:id=\"@+id/main\"\r\n    android:layout_width=\"match_parent\"\r\n    android:layout_height=\"match_parent\"\r\n    tools:context=\".LogIn\">\r\n\r\n</androidx.constraintlayout.widget.ConstraintLayout>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/layout/activity_log_in.xml b/app/src/main/res/layout/activity_log_in.xml
+--- a/app/src/main/res/layout/activity_log_in.xml	(revision 47fd07f3a562679089dc3d48354c6c026df1eb85)
++++ b/app/src/main/res/layout/activity_log_in.xml	(date 1791786491000)
+@@ -5,6 +5,38 @@
+     android:id="@+id/main"
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
++    android:background="#CDDEBE"
+     tools:context=".LogIn">
+ 
++    <ImageView
++        android:id="@+id/imageView2"
++        android:layout_width="952dp"
++        android:layout_height="683dp"
++        android:src="@drawable/study_guard_login"
++        tools:layout_editor_absoluteX="-271dp"
++        tools:layout_editor_absoluteY="24dp" />
++
++    <ImageView
++        android:id="@+id/imageView3"
++        android:layout_width="41dp"
++        android:layout_height="101dp"
++        android:src="@drawable/battery"
++        tools:layout_editor_absoluteX="342dp"
++        tools:layout_editor_absoluteY="-18dp" />
++
++    <ImageView
++        android:id="@+id/imageView4"
++        android:layout_width="35dp"
++        android:layout_height="57dp"
++        android:src="@drawable/wifi"
++        tools:layout_editor_absoluteX="295dp"
++        tools:layout_editor_absoluteY="5dp" />
++
++    <TextClock
++        android:id="@+id/textClock"
++        android:layout_width="101dp"
++        android:layout_height="49dp"
++        tools:layout_editor_absoluteX="16dp"
++        tools:layout_editor_absoluteY="16dp" />
++
+ </androidx.constraintlayout.widget.ConstraintLayout>
+\ No newline at end of file
+Index: app/src/main/res/layout/activity_log_out.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<androidx.constraintlayout.widget.ConstraintLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\r\n    xmlns:app=\"http://schemas.android.com/apk/res-auto\"\r\n    xmlns:tools=\"http://schemas.android.com/tools\"\r\n    android:id=\"@+id/main\"\r\n    android:layout_width=\"match_parent\"\r\n    android:layout_height=\"match_parent\"\r\n    android:background=\"#C8DAFA\"\r\n    android:backgroundTint=\"#C8DAFA\"\r\n    tools:context=\".Log_Out\">\r\n\r\n    <ImageView\r\n        android:id=\"@+id/imageView6\"\r\n        android:layout_width=\"130dp\"\r\n        android:layout_height=\"107dp\"\r\n        android:src=\"@drawable/_8c398890_50b6_4e08_b592_f19d2cf2cdea_removalai_preview\"\r\n        tools:layout_editor_absoluteX=\"288dp\"\r\n        tools:layout_editor_absoluteY=\"36dp\" />\r\n\r\n    <ImageView\r\n        android:id=\"@+id/imageView7\"\r\n        android:layout_width=\"37dp\"\r\n        android:layout_height=\"46dp\"\r\n        android:src=\"@drawable/aee0de14_793b_4fdc_a208_ef6523da6876_removalai_preview\"\r\n        tools:layout_editor_absoluteX=\"358dp\"\r\n        tools:layout_editor_absoluteY=\"-2dp\" />\r\n\r\n    <ImageView\r\n        android:id=\"@+id/imageView9\"\r\n        android:layout_width=\"39dp\"\r\n        android:layout_height=\"48dp\"\r\n        android:src=\"@drawable/_4e240f1d_c338_4ef1_8e7f_4fd65d418185_removalai_preview\"\r\n        tools:layout_editor_absoluteX=\"319dp\"\r\n        tools:layout_editor_absoluteY=\"-2dp\" />\r\n\r\n    <ImageView\r\n        android:id=\"@+id/imageView11\"\r\n        android:layout_width=\"351dp\"\r\n        android:layout_height=\"564dp\"\r\n        android:src=\"@drawable/screenshot_2026_10_12_140707\"\r\n        tools:layout_editor_absoluteX=\"30dp\"\r\n        tools:layout_editor_absoluteY=\"98dp\" />\r\n\r\n    <ImageView\r\n        android:id=\"@+id/imageView12\"\r\n        android:layout_width=\"137dp\"\r\n        android:layout_height=\"127dp\"\r\n        android:src=\"@drawable/_615090f0_e84d_449b_876b_cf936c6900fe_removalai_preview\"\r\n        tools:layout_editor_absoluteX=\"137dp\"\r\n        tools:layout_editor_absoluteY=\"196dp\" />\r\n\r\n    <ImageView\r\n        android:id=\"@+id/imageView13\"\r\n        android:layout_width=\"170dp\"\r\n        android:layout_height=\"98dp\"\r\n        android:src=\"@drawable/db54f5b5_03d9_4027_8647_feefc99aefe8_removalai_preview\"\r\n        tools:layout_editor_absoluteX=\"111dp\"\r\n        tools:layout_editor_absoluteY=\"212dp\" />\r\n\r\n    <ImageView\r\n        android:id=\"@+id/imageView14\"\r\n        android:layout_width=\"196dp\"\r\n        android:layout_height=\"82dp\"\r\n        android:src=\"@android:drawable/dialog_holo_dark_frame\"\r\n        tools:layout_editor_absoluteX=\"185dp\"\r\n        tools:layout_editor_absoluteY=\"413dp\" />\r\n\r\n    <ImageView\r\n        android:id=\"@+id/imageView16\"\r\n        android:layout_width=\"22dp\"\r\n        android:layout_height=\"26dp\"\r\n        android:src=\"@drawable/_245ac0eb_062c_4d6b_ba7b_1bc72698810a_removalai_preview\"\r\n        tools:layout_editor_absoluteX=\"349dp\"\r\n        tools:layout_editor_absoluteY=\"170dp\" />\r\n\r\n</androidx.constraintlayout.widget.ConstraintLayout>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/layout/activity_log_out.xml b/app/src/main/res/layout/activity_log_out.xml
+--- a/app/src/main/res/layout/activity_log_out.xml	(revision 47fd07f3a562679089dc3d48354c6c026df1eb85)
++++ b/app/src/main/res/layout/activity_log_out.xml	(date 1791788066770)
+@@ -9,30 +9,6 @@
+     android:backgroundTint="#C8DAFA"
+     tools:context=".Log_Out">
+ 
+-    <ImageView
+-        android:id="@+id/imageView6"
+-        android:layout_width="130dp"
+-        android:layout_height="107dp"
+-        android:src="@drawable/_8c398890_50b6_4e08_b592_f19d2cf2cdea_removalai_preview"
+-        tools:layout_editor_absoluteX="288dp"
+-        tools:layout_editor_absoluteY="36dp" />
+-
+-    <ImageView
+-        android:id="@+id/imageView7"
+-        android:layout_width="37dp"
+-        android:layout_height="46dp"
+-        android:src="@drawable/aee0de14_793b_4fdc_a208_ef6523da6876_removalai_preview"
+-        tools:layout_editor_absoluteX="358dp"
+-        tools:layout_editor_absoluteY="-2dp" />
+-
+-    <ImageView
+-        android:id="@+id/imageView9"
+-        android:layout_width="39dp"
+-        android:layout_height="48dp"
+-        android:src="@drawable/_4e240f1d_c338_4ef1_8e7f_4fd65d418185_removalai_preview"
+-        tools:layout_editor_absoluteX="319dp"
+-        tools:layout_editor_absoluteY="-2dp" />
+-
+     <ImageView
+         android:id="@+id/imageView11"
+         android:layout_width="351dp"
+@@ -54,23 +30,7 @@
+         android:layout_width="170dp"
+         android:layout_height="98dp"
+         android:src="@drawable/db54f5b5_03d9_4027_8647_feefc99aefe8_removalai_preview"
+-        tools:layout_editor_absoluteX="111dp"
+-        tools:layout_editor_absoluteY="212dp" />
+-
+-    <ImageView
+-        android:id="@+id/imageView14"
+-        android:layout_width="196dp"
+-        android:layout_height="82dp"
+-        android:src="@android:drawable/dialog_holo_dark_frame"
+-        tools:layout_editor_absoluteX="185dp"
+-        tools:layout_editor_absoluteY="413dp" />
+-
+-    <ImageView
+-        android:id="@+id/imageView16"
+-        android:layout_width="22dp"
+-        android:layout_height="26dp"
+-        android:src="@drawable/_245ac0eb_062c_4d6b_ba7b_1bc72698810a_removalai_preview"
+-        tools:layout_editor_absoluteX="349dp"
+-        tools:layout_editor_absoluteY="170dp" />
++        tools:layout_editor_absoluteX="104dp"
++        tools:layout_editor_absoluteY="211dp" />
+ 
+ </androidx.constraintlayout.widget.ConstraintLayout>
+\ No newline at end of file
