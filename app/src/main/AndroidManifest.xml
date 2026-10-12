@@ -10,6 +10,15 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.StudyGuard" />
+        android:theme="@style/Theme.StudyGuard">
+        <activity
+            android:name=".LogIn"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".LogIn"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+    </application>
 
 </manifest>
