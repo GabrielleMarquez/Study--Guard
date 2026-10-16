@@ -46,8 +46,7 @@
             android:layout_marginBottom="12dp"
             android:backgroundTint="@null"
             android:text="Log Out"
-            android:textAllCaps="false"
-            android:textColor="#FFFFFF"
+            android:textColor="@color/black"
             android:textSize="16sp" />
 
 
@@ -58,8 +57,7 @@
             android:layout_marginBottom="12dp"
             android:backgroundTint="@null"
             android:text="Change Password"
-            android:textAllCaps="false"
-            android:textColor="#FFFFFF"
+            android:textColor="@color/black"
             android:textSize="16sp" />
 
 
@@ -70,8 +68,7 @@
             android:layout_marginBottom="12dp"
             android:backgroundTint="@null"
             android:text="Notification  🔔"
-            android:textAllCaps="false"
-            android:textColor="#FFFFFF"
+            android:textColor="@color/black"
             android:textSize="16sp" />
 
 
@@ -81,8 +78,7 @@
             android:layout_height="54dp"
             android:backgroundTint="@null"
             android:text="Language"
-            android:textAllCaps="false"
-            android:textColor="#FFFFFF"
+            android:textColor="@color/black"
             android:textSize="16sp" />
 
     </LinearLayout>
