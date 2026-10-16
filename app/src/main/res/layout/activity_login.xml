@@ -97,17 +97,9 @@
         android:id="@+id/imageView8"
         android:layout_width="605dp"
         android:layout_height="675dp"
-        android:src="@drawable/Login_logo"
+        android:src="@drawable/login_logo"
         tools:layout_editor_absoluteX="-97dp"
         tools:layout_editor_absoluteY="-17dp" />
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="707dp"
-        android:layout_height="635dp"
-        android:src="@drawable/login_logo"
-        tools:layout_editor_absoluteX="-148dp"
-        tools:layout_editor_absoluteY="-6dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
