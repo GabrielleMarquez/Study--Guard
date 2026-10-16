@@ -53,14 +53,14 @@
 
     <ImageView
         android:id="@+id/imageView4"
-        android:layout_width="55dp"
-        android:layout_height="61dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="5dp"
         android:scaleType="fitCenter"
         android:src="@drawable/_4e240f1d_c338_4ef1_8e7f_4fd65d418185_removalai_preview"
-        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintEnd_toStartOf="@id/imageView3"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="5dp" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/resetPassword"
@@ -77,8 +77,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="2dp" />
-
-
 
     <Button
         android:id="@+id/loginButton"
@@ -99,9 +97,9 @@
         android:id="@+id/imageView8"
         android:layout_width="605dp"
         android:layout_height="675dp"
-        android:src="@drawable/Login_logo"
+        android:src="@drawable/login_logo"
         tools:layout_editor_absoluteX="-97dp"
-        tools:layout_editor_absoluteY="-16dp" />
+        tools:layout_editor_absoluteY="-17dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
