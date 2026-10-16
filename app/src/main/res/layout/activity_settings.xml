@@ -3,9 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#96B2AD"
+    android:background="#C5D9FF"
     android:padding="24dp">
-
 
 
     <ImageView
@@ -17,7 +16,7 @@
         android:layout_marginStart="5dp"
         android:layout_marginTop="48dp"
         android:contentDescription="Profile"
-        app:srcCompat="@drawable/sas" />
+        app:srcCompat="@drawable/_8c398890_50b6_4e08_b592_f19d2cf2cdea_removalai_preview" />
 
     <TextView
         android:id="@+id/tvSettingsTitle"
@@ -95,12 +94,12 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="28dp"
-        android:gravity="center"
-        android:text="Terms &amp; Condition"
-        android:textColor="#5C6BC0"
-        android:textSize="14sp"
         android:clickable="true"
         android:focusable="true"
-        android:padding="12dp" />
+        android:gravity="center"
+        android:padding="12dp"
+        android:text="Terms &amp; Condition"
+        android:textColor="#5C6BC0"
+        android:textSize="14sp" />
 
 </RelativeLayout>
