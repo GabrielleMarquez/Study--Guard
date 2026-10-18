@@ -1,0 +1,70 @@
+
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#8EADA4">
+
+    <!-- Main cream-colored curved background -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/rfid_background"
+        android:scaleType="fitXY"
+        android:contentDescription="@null" />
+
+    <!-- Main screen content -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- Heading -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="150dp"
+            android:text="SCAN YOUR RFID"
+            android:textColor="#000000"
+            android:textSize="27sp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-condensed"
+            android:letterSpacing="-0.03"
+            android:gravity="center" />
+
+        <!-- Interactive scanning area -->
+        <FrameLayout
+            android:id="@+id/scannerFrame"
+            android:layout_width="240dp"
+            android:layout_height="235dp"
+            android:layout_marginTop="10dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:contentDescription="Tap the RFID scanner area">
+
+            <!-- Four scanner corner marks -->
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/rfid_corners"
+                android:scaleType="fitXY"
+                android:contentDescription="@null" />
+
+        </FrameLayout>
+
+        <!-- HERE label -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="HERE"
+            android:textColor="#000000"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="center" />
+
+    </LinearLayout>
+
+</FrameLayout>
