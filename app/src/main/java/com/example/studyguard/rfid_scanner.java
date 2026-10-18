@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.FrameLayout;
 import android.widget.Toast;
 
-import androidx.appcompa.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 
 public class rfid_scanner extends AppCompatActivity {
 
