@@ -1,115 +1,76 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#E3F2FD">   <!-- light blue background -->
+    android:background="#C8DAFA"
+    android:backgroundTint="#C8DAFA"
+    tools:context=".Log_Out">
 
-    <!-- Centered white card -->
-    <androidx.cardview.widget.CardView
-        android:id="@+id/logoutCard"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginEnd="32dp"
-        app:cardCornerRadius="20dp"
-        app:cardElevation="8dp"
-        app:cardBackgroundColor="@android:color/white"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent">
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="130dp"
+        android:layout_height="107dp"
+        android:src="@drawable/_8c398890_50b6_4e08_b592_f19d2cf2cdea_removalai_preview"
+        tools:layout_editor_absoluteX="288dp"
+        tools:layout_editor_absoluteY="36dp" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:gravity="center_horizontal"
-            android:padding="28dp">
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="37dp"
+        android:layout_height="46dp"
+        android:src="@drawable/aee0de14_793b_4fdc_a208_ef6523da6876_removalai_preview"
+        tools:layout_editor_absoluteX="358dp"
+        tools:layout_editor_absoluteY="-2dp" />
 
-            <!-- Circular logout icon -->
-            <ImageView
-                android:id="@+id/logoutIcon"
-                android:layout_width="64dp"
-                android:layout_height="64dp"
-                android:background="@drawable/db54f5b5_03d9_4027_8647_feefc99aefe8_removalai_preview"
-                android:contentDescription="Logout icon"
-                android:padding="14dp"
-                android:scaleType="fitCenter"
-                android:src="" />
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="39dp"
+        android:layout_height="48dp"
+        android:src="@drawable/_4e240f1d_c338_4ef1_8e7f_4fd65d418185_removalai_preview"
+        tools:layout_editor_absoluteX="319dp"
+        tools:layout_editor_absoluteY="-2dp" />
 
-            <!-- Title -->
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:text="Log Out"
-                android:textSize="22sp"
-                android:textStyle="bold"
-                android:textColor="#212121" />
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="351dp"
+        android:layout_height="564dp"
+        android:src="@drawable/screenshot_2026_10_12_140707"
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="98dp" />
 
-            <!-- Message -->
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:text="Are you sure you want to log out?"
-                android:textSize="15sp"
-                android:textColor="#616161"
-                android:gravity="center" />
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="137dp"
+        android:layout_height="127dp"
+        android:src="@drawable/_615090f0_e84d_449b_876b_cf936c6900fe_removalai_preview"
+        tools:layout_editor_absoluteX="137dp"
+        tools:layout_editor_absoluteY="196dp" />
 
-            <!-- Buttons row -->
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="28dp"
-                android:orientation="horizontal"
-                android:gravity="center">
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="170dp"
+        android:layout_height="98dp"
+        android:src="@drawable/db54f5b5_03d9_4027_8647_feefc99aefe8_removalai_preview"
+        tools:layout_editor_absoluteX="111dp"
+        tools:layout_editor_absoluteY="212dp" />
 
-                <!-- Log Out (text button) -->
-                <TextView
-                    android:id="@+id/btnLogOut"
-                    android:layout_width="0dp"
-                    android:layout_height="48dp"
-                    android:layout_weight="1"
-                    android:gravity="center"
-                    android:text="Log Out"
-                    android:textSize="16sp"
-                    android:textColor="#2196F3"
-                    android:background="?attr/selectableItemBackground"
-                    android:clickable="true"
-                    android:focusable="true" />
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="196dp"
+        android:layout_height="82dp"
+        android:src="@android:drawable/dialog_holo_dark_frame"
+        tools:layout_editor_absoluteX="185dp"
+        tools:layout_editor_absoluteY="413dp" />
 
-                <!-- Cancel (filled button) -->
-                <Button
-                    android:id="@+id/btnCancel"
-                    android:layout_width="0dp"
-                    android:layout_height="48dp"
-                    android:layout_weight="1"
-                    android:layout_marginStart="12dp"
-                    android:text="Cancel"
-                    android:textAllCaps="false"
-                    android:textSize="16sp"
-                    android:textColor="@android:color/white"
-                    android:backgroundTint="#2196F3" />
-            </LinearLayout>
-
-            <!-- Terms & Conditions -->
-            <TextView
-                android:id="@+id/tvTerms"
-                android:layout_width="132dp"
-                android:layout_height="41dp"
-                android:layout_marginTop="24dp"
-                android:background="?attr/selectableItemBackground"
-                android:clickable="true"
-                android:focusable="true"
-                android:padding="8dp"
-                android:text="Terms &amp; Conditions"
-                android:textColor="#757575"
-                android:textSize="13sp" />
-
-        </LinearLayout>
-    </androidx.cardview.widget.CardView>
+    <ImageView
+        android:id="@+id/imageView16"
+        android:layout_width="22dp"
+        android:layout_height="26dp"
+        android:src="@drawable/_245ac0eb_062c_4d6b_ba7b_1bc72698810a_removalai_preview"
+        tools:layout_editor_absoluteX="349dp"
+        tools:layout_editor_absoluteY="170dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
