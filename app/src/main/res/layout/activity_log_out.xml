@@ -30,7 +30,7 @@
 
             <!-- Circular logout icon -->
             <ImageView
-                android:id="@+id/logoutIcon"
+                android:id="@+id/ImageView"
                 android:layout_width="64dp"
                 android:layout_height="64dp"
                 android:background="@drawable/db54f5b5_03d9_4027_8647_feefc99aefe8_removalai_preview"
@@ -98,16 +98,17 @@
             <!-- Terms & Conditions -->
             <TextView
                 android:id="@+id/tvTerms"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="200dp"
+                android:layout_height="48dp"
                 android:layout_marginTop="24dp"
-                android:text="Terms &amp; Conditions"
-                android:textSize="13sp"
-                android:textColor="#757575"
                 android:background="?attr/selectableItemBackground"
-                android:padding="8dp"
                 android:clickable="true"
-                android:focusable="true" />
+                android:focusable="true"
+                android:padding="8dp"
+                android:text="Terms &amp; Conditions"
+                android:textAlignment="center"
+                android:textColor="#757575"
+                android:textSize="13sp" />
 
         </LinearLayout>
     </androidx.cardview.widget.CardView>
