@@ -1,0 +1,55 @@
+Index: app/src/main/java/com/example/studyguard/LogIn.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.example.studyguard;\r\n\r\nimport android.content.Intent;\r\nimport android.os.Bundle;\r\nimport android.widget.Button;\r\nimport android.widget.EditText;\r\nimport android.widget.Toast;\r\n\r\nimport androidx.appcompat.app.AppCompatActivity;\r\n\r\npublic class LogIn extends AppCompatActivity {\r\n\r\n    private EditText studentNumberInput;\r\n    private EditText passwordInput;\r\n    private Button loginButton;\r\n\r\n    @Override\r\n    protected void onCreate(Bundle savedInstanceState) {\r\n        super.onCreate(savedInstanceState);\r\n        setContentView(R.layout.activity_login);\r\n\r\n        studentNumberInput = findViewById(R.id.studentNumber);\r\n        passwordInput = findViewById(R.id.password);\r\n        loginButton = findViewById(R.id.loginButton);\r\n\r\n        loginButton.setOnClickListener(v -> {\r\n            String studentNumber = studentNumberInput.getText().toString().trim();\r\n            String password = passwordInput.getText().toString().trim();\r\n\r\n            if (studentNumber.isEmpty()) {\r\n                studentNumberInput.setError(\"Please enter student number\");\r\n                return;\r\n            }\r\n\r\n            if (password.isEmpty()) {\r\n                passwordInput.setError(\"Please enter password\");\r\n                return;\r\n            }\r\n\r\n            // Perform login logic or navigation\r\n            Toast.makeText(LogIn.this, \"Login Successful!\", Toast.LENGTH_SHORT).show();\r\n\r\n            // Example: Navigate to the next activity (e.g., RFID Scanner)\r\n            Intent intent = new Intent(LogIn.this, rfid_scanner.class);\r\n            startActivity(intent);\r\n        });\r\n    }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/java/com/example/studyguard/LogIn.java b/app/src/main/java/com/example/studyguard/LogIn.java
+--- a/app/src/main/java/com/example/studyguard/LogIn.java	(revision 38a17e17bf8de7f6d91e06d11db4fb5b63ea2960)
++++ b/app/src/main/java/com/example/studyguard/LogIn.java	(date 1794406946653)
+@@ -4,6 +4,7 @@
+ import android.os.Bundle;
+ import android.widget.Button;
+ import android.widget.EditText;
++import android.widget.TextView;
+ import android.widget.Toast;
+ 
+ import androidx.appcompat.app.AppCompatActivity;
+@@ -13,6 +14,7 @@
+     private EditText studentNumberInput;
+     private EditText passwordInput;
+     private Button loginButton;
++    private TextView resetPasswordText;
+ 
+     @Override
+     protected void onCreate(Bundle savedInstanceState) {
+@@ -22,7 +24,9 @@
+         studentNumberInput = findViewById(R.id.studentNumber);
+         passwordInput = findViewById(R.id.password);
+         loginButton = findViewById(R.id.loginButton);
++        resetPasswordText = findViewById(R.id.resetPassword);
+ 
++        // Handle Login button click
+         loginButton.setOnClickListener(v -> {
+             String studentNumber = studentNumberInput.getText().toString().trim();
+             String password = passwordInput.getText().toString().trim();
+@@ -40,9 +44,17 @@
+             // Perform login logic or navigation
+             Toast.makeText(LogIn.this, "Login Successful!", Toast.LENGTH_SHORT).show();
+ 
+-            // Example: Navigate to the next activity (e.g., RFID Scanner)
++            // Navigate to RFID Scanner screen
+             Intent intent = new Intent(LogIn.this, rfid_scanner.class);
+             startActivity(intent);
+         });
++
++        // Handle Reset Password click
++        resetPasswordText.setOnClickListener(v -> {
++            Toast.makeText(LogIn.this, "Reset Password requested!", Toast.LENGTH_SHORT).show();
++            // You can launch a Reset Password activity or dialog here:
++            // Intent resetIntent = new Intent(LogIn.this, ResetPasswordActivity.class);
++            // startActivity(resetIntent);
++        });
+     }
+ }
