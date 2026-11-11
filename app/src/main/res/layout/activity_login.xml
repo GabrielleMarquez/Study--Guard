@@ -9,51 +9,8 @@
     android:background="@drawable/login_background"
     tools:context=".LogIn">
 
-    <!-- Top Right Corner Icons -->
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="47dp"
-        android:layout_height="67dp"
-        android:src="@drawable/aee0de14_793b_4fdc_a208_ef6523da6876_removalai_preview"
-        android:scaleType="fitCenter"
-        android:contentDescription="@null"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="20dp" />
 
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:scaleType="fitCenter"
-        android:src="@drawable/_4e240f1d_c338_4ef1_8e7f_4fd65d418185_removalai_preview"
-        android:contentDescription="@null"
-        app:layout_constraintEnd_toStartOf="@id/imageView3"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="5dp" />
-
-    <!-- App Logo (reasonably sized to prevent main thread memory/layout lag) -->
-
-    <!-- Input: Student Number -->
-
-    <ImageView
-        android:id="@+id/Logo"
-        android:layout_width="463dp"
-        android:layout_height="470dp"
-        android:layout_marginTop="40dp"
-        android:layout_marginBottom="16dp"
-        android:contentDescription="@null"
-        android:scaleType="fitCenter"
-        android:src="@drawable/login_logo"
-        app:layout_constraintBottom_toTopOf="@id/studentNumber"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <EditText
+<EditText
         android:id="@+id/studentNumber"
         android:layout_width="0dp"
         android:layout_height="50dp"
@@ -62,7 +19,6 @@
         android:singleLine="true"
         android:padding="10dp"
         android:background="#FFFFFF"
-        android:autofillHints="username"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -70,7 +26,6 @@
         android:layout_marginEnd="24dp"
         android:layout_marginTop="350dp" />
 
-    <!-- Input: Password -->
     <EditText
         android:id="@+id/password"
         android:layout_width="0dp"
@@ -80,39 +35,63 @@
         android:singleLine="true"
         android:padding="10dp"
         android:background="#FFFFFF"
-        android:autofillHints="password"
         app:layout_constraintTop_toBottomOf="@id/studentNumber"
         app:layout_constraintStart_toStartOf="@id/studentNumber"
         app:layout_constraintEnd_toEndOf="@id/studentNumber"
         android:layout_marginTop="2dp" />
 
-    <!-- Reset Password Link -->
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="47dp"
+        android:layout_height="67dp"
+        android:src="@drawable/aee0de14_793b_4fdc_a208_ef6523da6876_removalai_preview"
+        android:scaleType="fitCenter"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="5dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/_4e240f1d_c338_4ef1_8e7f_4fd65d418185_removalai_preview"
+        app:layout_constraintEnd_toStartOf="@id/imageView3"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="180dp"
+        android:layout_height="52dp"
+        android:background="@drawable/login_button"
+        android:text="Log in"
+        android:textAllCaps="false"
+        android:textColor="#000000"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="499dp" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="605dp"
+        android:layout_height="675dp"
+        android:src="@drawable/login_logo"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-97dp"
+        tools:layout_editor_absoluteY="-16dp" />
+
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="RESET PASSWORD"
         android:textColor="#000000"
-        app:layout_constraintTop_toBottomOf="@id/password"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="12dp" />
-
-    <!-- Action: Login Button -->
-    <Button
-        android:id="@+id/loginButton"
-        android:layout_width="180dp"
-        android:layout_height="52dp"
-        android:background="@drawable/login_button"
-        app:backgroundTint="@null"
-        android:text="Log in"
-        android:textAllCaps="false"
-        android:textColor="#000000"
-        android:textSize="22sp"
-        android:textStyle="bold"
-        app:layout_constraintTop_toBottomOf="@id/textView"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="16dp" />
+        tools:layout_editor_absoluteX="146dp"
+        tools:layout_editor_absoluteY="462dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
